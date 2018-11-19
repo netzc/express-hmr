@@ -1,0 +1,25 @@
+{
+  "name": "express-hmr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "start-server-webpack-plugin": "^2.2.5",
+    "webpack": "^4.26.0",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:server": "(IF EXIST build rd /s /q build) && webpack --config webpack.config.server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
